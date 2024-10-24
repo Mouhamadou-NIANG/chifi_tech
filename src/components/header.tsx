@@ -12,34 +12,43 @@ export default function Header() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{ backgroundColor: '#59708163;', padding: 0, margin: 0 }}>
-        <Toolbar sx={{ justifyContent: 'center' }}> {/* Center the content */}
+        <Toolbar sx={{ justifyContent: 'center' }}>
           <IconButton
             size="large"
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: 1440, position: 'absolute', left: 16}}
+            sx={{ mr: 1440, position: 'absolute', left: 16 }}
           >
             <CoronavirusIcon />
           </IconButton>
 
           {/* Wrap the menu items in a container and center them */}
           <Box sx={{ display: 'flex', gap: 8 }}>
-            <Typography variant="h6" component="div">
-              Home
-            </Typography>
-            <Typography variant="h6" component="div">
-              Project
-            </Typography>
-            <Typography variant="h6" component="div">
-              Skills
-            </Typography>
-            <Typography variant="h6" component="div">
-              Past Collaboration
-            </Typography>
+            <Button color='inherit' sx={{ padding: 0, minWidth: 'auto', textTransform: 'none', backgroundColor: 'transparent', '&:hover': { backgroundColor: '#59708163' } }} onClick={() => console.log('Home clicked')}>
+              <Typography variant="h6" component="div">
+                Home
+              </Typography>
+            </Button>
+            <Button color='inherit' sx={{ padding: 0, minWidth: 'auto', textTransform: 'none', backgroundColor: 'transparent', '&:hover': { backgroundColor: '#59708163' } }} onClick={() => console.log('Home clicked')}>
+
+              <Typography variant="h6" component="div">
+                Project
+              </Typography>
+            </Button>
+            <Button color='inherit' sx={{ padding: 0, minWidth: 'auto', textTransform: 'none', backgroundColor: 'transparent', '&:hover': { backgroundColor: '#59708163' } }} onClick={() => console.log('Home clicked')}>
+              <Typography variant="h6" component="div">
+                Skills
+              </Typography>
+            </Button>
+            <Button color='inherit' sx={{ padding: 0, minWidth: 'auto', textTransform: 'none', backgroundColor: 'transparent', '&:hover': { backgroundColor: '#59708163' } }} onClick={() => console.log('Home clicked')}>
+              <Typography variant="h6" component="div">
+                Past Collaboration
+              </Typography>
+            </Button>
           </Box>
 
-          <Button color="inherit" sx={{ position: 'absolute', right: 16 }}>Login</Button> {/* Align login button to the right */}
+          <Button color="inherit" sx={{ position: 'absolute', right: 16 }}>Contact-Me</Button>
         </Toolbar>
       </AppBar>
     </Box>
