@@ -11,7 +11,7 @@ import CoronavirusIcon from '@mui/icons-material/Coronavirus';
 export default function Header() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: '#59708163;', padding: 0, margin: 0 }}>
+      <AppBar position="static" sx={{ backgroundColor: '#0a1e2dd4', paddingLeft: "15%", paddingRight: "15%", margin: 0, marginTop: "10px", position: "fixed", zIndex: 1 }}>
         <Toolbar sx={{ justifyContent: 'center' }}>
           <IconButton
             size="large"

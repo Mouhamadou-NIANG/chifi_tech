@@ -9,16 +9,17 @@ export default function Home_slider() {
       <div style={{ height: '100vh', position: 'relative', display: 'flex', justifyContent: 'center' }}>
         <Box
           sx={{
-            display: 'flex',                // Utiliser Flexbox
-            justifyContent: 'center',       // Centrer horizontalement
-            alignItems: 'center',           // Centrer verticalement
+            marginTop: "16%",
+            display: 'flex',         
+            justifyContent: 'center',   
+            alignItems: 'center', 
             bgcolor: '#cfe8fc',
-            height: '100vh',                // Hauteur de 100% de la fenêtre (viewport)
-            width: '80%',                  // Largeur de 100%
+            height: '100vh', 
+            width: '80%',  
           }}
         >
           <div>
-            <h1>Bienvenue sur la page d'accueil</h1>
+            <h1>Bienvenue sur mon Portfolio</h1>
             <p>Ce composant est centré horizontalement et verticalement.</p>
           </div>
         </Box>
